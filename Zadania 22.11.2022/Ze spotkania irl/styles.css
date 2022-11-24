@@ -1,0 +1,16 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+
+    background-color: #333333;
+    color: #ffffff;
+    font-family: consolas;
+}
+
+h1{
+    margin: 0%;
+    padding: 0%;
+}
+
