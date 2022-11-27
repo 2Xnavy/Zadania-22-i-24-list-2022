@@ -94,7 +94,12 @@ books.splice(9,6); // Przywrócenie tablicy 'books' do pierwotnego stanu, aby ni
 Stwórz kompozycję która na tablicy „books” zwraca drugi najdłuższy tytuł (title).
 */
 console.log("\nZADANIE 8: ");
+const sortTitles = (list) => list.sort((a,b) => b.length - a.length);
 
-const sortTitles = (list) => list.sort((a,b) => b.title.length - a.title.length);
-console.log(sortTitles(books)[1]);
-// TODO: Na razie nie wiem jak to zrobić kompozycją 
+const arrGetSecond = (list) => list[1];
+
+const mapToTitles = (list) => list.map((book) => book.title);
+
+const zadanie8Second = compose(arrGetSecond, sortTitles, mapToTitles);
+
+console.log(zadanie8Second(books));
